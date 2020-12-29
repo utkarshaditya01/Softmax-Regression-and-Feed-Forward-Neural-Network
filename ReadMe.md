@@ -16,7 +16,7 @@ for classifying OCR hand-written Digits.
 
 *Softmax Regression* is a generalization of logistic regression that we can use for multi-class classification. In *Softmax Regression* (SMR), we replace the sigmoid logistic function by the so-called *softmax* function. We use the *Logistic Regression* model in binary classification tasks
 
-![](img\Capture.png)
+![](/img/Capture.png)
 
 ## *Understanding*
 
@@ -28,7 +28,7 @@ The softmax function computes the probability of the training sample x<sup>(i)</
 
 1. **Update Rule for weight vector**
 
-   ![](img\Capture2.png)
+   ![](img/Capture2.png)
 
    where η is the learning rate, w<sub>j</sub> is the weight matrix and, the cost derivative is 
 
@@ -38,11 +38,11 @@ The softmax function computes the probability of the training sample x<sup>(i)</
 
    and for updating bias vector, the following formula is user 
 
-   ![](img\Capture4.png)
+   ![](img/Capture4.png)
 
 2. **Cross Entropy function**
 
-   ![](img\Capture5.png)
+   ![](img/Capture5.png)
 
 ## *Procedure*
 
@@ -77,25 +77,25 @@ The feedforward model is so called because information ﬂows through the functi
 
 1. Cost Error
 
-   ![](img\Capture6.png)
+   ![](img/Capture6.png)
 
    Backpropagation implementation using chain rule
 
-   ![](img\uk1.png)
+   ![](img/uk1.png)
 
 2. Activation Function
 
-   ![](img\unknown.png)
+   ![](img/unknown.png)
 
 3. Hypothesis Function
 
-   <img src="img\Capture7.PNG" height=200>
+   ![](img/Capture7.png)
 
 ## *Procedure*
 
 ***Libraries Used* :** Numpy and panda
 
-1. **Reading the data : ** The train.csv is read and the data is split into feature vectors array and respective class labels array.
+1. **Reading the data :** The train.csv is read and the data is split into feature vectors array and respective class labels array.
 2. **Training :** First the input is multiplied with weights and then they are passed to the activation function and then the output is feed forwarded to the next layer. Then according to the error the weights are balanced using the backpropagation algorithm.
 3. **Prediction :**  Given the input feature vector, the class cell with the highest score in the output layer is selected.
 4. **Testing(Accuracy) :** If the prediction matches with the class of the feature vector in the test set, the prediction is correct. The performance of the classifier is tested by taking the number of correct predictions and dividing them by the total number of predictions. This is critical in understanding the veracity of the model.
