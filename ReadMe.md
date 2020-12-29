@@ -16,7 +16,7 @@ for classifying OCR hand-written Digits.
 
 *Softmax Regression* is a generalization of logistic regression that we can use for multi-class classification. In *Softmax Regression* (SMR), we replace the sigmoid logistic function by the so-called *softmax* function. We use the *Logistic Regression* model in binary classification tasks
 
-![](img\Capture.PNG)
+![](img\Capture.png)
 
 ## *Understanding*
 
@@ -28,21 +28,21 @@ The softmax function computes the probability of the training sample x<sup>(i)</
 
 1. **Update Rule for weight vector**
 
-   ![](img\Capture2.PNG)
+   ![](img\Capture2.png)
 
    where η is the learning rate, w<sub>j</sub> is the weight matrix and, the cost derivative is 
 
-   ![](img\Capture.3PNG.PNG)
+   ![](img\Capture.3PNG.png)
 
    where O<sub>i</sub> is the output vector and T<sub>i</sub> is the target vector.
 
    and for updating bias vector, the following formula is user 
 
-   ![](img\Capture4.PNG)
+   ![](img\Capture4.png)
 
 2. **Cross Entropy function**
 
-   ![](img\Capture5.PNG)
+   ![](img\Capture5.png)
 
 ## *Procedure*
 
@@ -77,11 +77,11 @@ The feedforward model is so called because information ﬂows through the functi
 
 1. Cost Error
 
-   ![](img\Capture6.PNG)
+   ![](img\Capture6.png)
 
    Backpropagation implementation using chain rule
 
-   ![](img\unknown (1).png)
+   ![](img\uk1.png)
 
 2. Activation Function
 
